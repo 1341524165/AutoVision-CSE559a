@@ -1,0 +1,37 @@
+# Data directories (large files)
+data/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Zip archives
+*.zip
+
+# macOS artifacts
+__MACOSX/
+
+# Large lockfiles
+autoresearch-cifar10/**/uv.lock
+
+# Autoresearch runtime artifacts (cluster scripts, worktrees, job logs)
+autoresearch-cifar10/autoresearch_jobs/
+
+# Root-level generated images (duplicates of figures/)
+/cifar10_samples.png
+/pet_samples.png
