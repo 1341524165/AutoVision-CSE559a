@@ -1,0 +1,30 @@
+commit	best_acc	memory_gb	status	description
+efb77bf	89.49	0.3	keep	5min current 1min champion rerun
+4e014bb	88.72	0.3	discard	5min max_lr 0.35
+7a2cbf6	88.91	0.3	discard	5min label smoothing 0.03
+20c1fa2	88.95	0.3	discard	5min max_lr 0.4
+5c0ea27	89.17	0.3	discard	5min pct_start 0.25
+447d3c2	89.18	0.3	discard	5min weight decay 2e-4
+851b07f	89.11	0.3	discard	overnight 5min max_lr 0.45
+ed4daf3	89.11	0.3	discard	overnight 5min max_lr 0.45
+a39020d	88.52	0.3	discard	overnight 5min max_lr 0.55
+5b321aa	88.68	0.3	discard	overnight 5min max_lr 0.55
+057d774	89.09	0.3	discard	overnight 5min pct_start 0.35
+bac6688	89.06	0.3	discard	overnight 5min pct_start 0.35
+ba3bb9a	88.97	0.3	discard	overnight 5min pct_start 0.20
+e42b990	89.12	0.3	discard	overnight 5min pct_start 0.20
+af810d2	88.97	0.3	discard	overnight 5min label smoothing 0.02
+99815cd	89.02	0.3	discard	overnight 5min label smoothing 0.02
+2463b10	88.95	0.3	discard	overnight 5min label smoothing 0.015
+fc7bea3	88.86	0.3	discard	overnight 5min label smoothing 0.015
+098c015	89.24	0.3	discard	overnight 5min weight decay 1e-4
+098c015	89.24	0.3	discard	overnight 5min weight decay 1e-4
+291e6a6	88.55	0.3	discard	overnight 5min weight decay 2.5e-4
+10b7f1d	88.64	0.3	discard	overnight 5min weight decay 2.5e-4
+afd4346	88.27	0.2	discard	overnight 5min batch size 96
+cf3c3f8	87.89	0.2	discard	overnight 5min batch size 96
+7ab58ed	89.76	0.4	keep	overnight 5min batch size 160
+5470c22	89.75	0.4	discard	overnight 5min batch size 160
+6b870e4	89.06	0.3	discard	v2 5min batch size 144
+7f2270e	89.98	0.4	keep	v2 5min batch size 176
+be555c9	90.26	0.4	keep	v2 5min max_lr 0.45 on bs160
