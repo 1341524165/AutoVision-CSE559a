@@ -1,0 +1,91 @@
+commit	best_acc	memory_gb	status	description
+a211c77	81.31	0.2	keep	baseline ResNet-20
+6e8d31d	85.56	0.2	keep	cosine LR with LR=0.1 and MAX_STEPS=5000
+da0dc9c	85.57	0.2	keep	Nesterov momentum
+a728550	88.03	0.2	keep	OneCycleLR max_lr=0.3 pct_start=0.3
+f58f3de	88.36	0.2	keep	OneCycleLR max_lr=0.5
+127e508	87.87	0.2	discard	OneCycleLR max_lr=0.6
+d03965c	88.2	0.2	discard	OneCycleLR max_lr=0.5 pct_start=0.2
+91b7377	81.15	0.1	discard	AMP + MAX_STEPS=8000
+aa336ca	88.2	0.2	discard	OneCycleLR max_lr=0.4
+617fa66	88.46	0.3	keep	SiLU activations with OneCycleLR max_lr=0.5
+9a33d2c	86.56	0.3	discard	label smoothing 0.1
+a44e696	88.25	0.3	discard	MAX_STEPS 6000
+0c8a4c0	86.2	0.6	discard	BATCH_SIZE 256
+1b7b8b2	88.68	0.3	keep	1x1 projection shortcut on downsampling
+54fefc9	89.25	0.3	keep	1x1 projection shortcut + label smoothing 0.02
+266f1f0	88.73	0.3	discard	RandomErasing p=0.25
+91f6adf	88.96	0.3	discard	weight decay 2e-4
+76c1277	88.27	0.3	discard	max_lr 0.55
+e58ec34	88.96	0.3	discard	GELU activations
+8da6be6	89.07	0.3	discard	zero_grad set_to_none
+4f2a926	89.19	0.3	discard	label smoothing 0.03
+3b44772	89.03	0.4	discard	cudnn benchmark
+9dd5a0b	88.98	0.3	discard	pct_start 0.25
+ff8cfbc	81.1	0.3	discard	bs 128 wd 0.0001 ls 0.03 max_lr 0.5 pct_start 0.3
+1432a90	88.83	0.3	discard	bs 128 wd 0.00007 ls 0.02 max_lr 0.5 pct_start 0.3
+8f33b0e	88.99	0.3	discard	bs 128 wd 0.0001 ls 0.02 max_lr 0.5 pct_start 0.27
+ea49011	88.45	0.3	discard	bs 128 wd 0.0001 ls 0.03 max_lr 0.48 pct_start 0.3
+78038ae	89.0	0.3	discard	bs 128 wd 0.00005 ls 0.02 max_lr 0.5 pct_start 0.3
+cda19be	89.12	0.3	discard	bs 128 wd 0.0001 ls 0.015 max_lr 0.5 pct_start 0.3
+4f01509	88.88	0.3	discard	bs 128 wd 0.0001 ls 0.02 max_lr 0.5 pct_start 0.23
+862dd91	89.11	0.3	discard	bs 128 wd 0.0001 ls 0.02 max_lr 0.5 pct_start 0.25
+5617335	88.69	0.3	discard	bs 128 wd 0.0001 ls 0.02 max_lr 0.47 pct_start 0.3
+88373b8	89.21	0.3	discard	bs 128 wd 0.0001 ls 0.025 max_lr 0.5 pct_start 0.3
+c5fe06a	88.89	0.2	discard	batch 96 with matched schedule horizon
+bbf99a8	88.93	0.3	discard	EMA decay 0.995
+9c45e49	88.54	0.3	discard	zero init residual branch BN
+616e691	88.39	0.3	discard	mixup alpha 0.2
+9534a83	86.88	0.5	discard	width 24-48-96
+3eac71e	88.94	0.4	discard	width 20-40-80
+541c7be	89.23	0.3	discard	safe max_lr 0.45
+2f9adf2	89.11	0.3	discard	safe max_lr 0.52
+564dbab	88.95	0.3	discard	safe pct_start 0.35
+5f74573	89.14	0.3	discard	safe pct_start 0.2
+066d822	89.17	0.3	discard	safe label smoothing 0.015
+366d957	89.28	0.3	keep	safe label smoothing 0.025
+d926469	89.2	0.3	discard	safe weight decay 7e-5
+2f96987	89.4	0.3	keep	safe weight decay 1.5e-4
+26da080	89.22	0.3	discard	safe max_lr 0.48 pct_start 0.35
+680a49a	88.46	0.3	discard	safe nesterov off
+4da79d2	88.44	0.4	discard	safe batch size 160
+8a5d34a	0.0	0.0	crash	OneCycle total_steps=4500
+7ace963	0.0	0.0	crash	OneCycle max_lr=0.45
+5b92c99	0.0	0.0	crash	OneCycle max_lr=0.52
+799b6e2	0.0	0.0	crash	OneCycle pct_start=0.35
+8e98d2f	0.0	0.0	crash	label smoothing 0.025 total_steps=4500
+875d7b3	0.0	0.0	crash	OneCycle max_lr=0.48 pct_start=0.35
+5f30e02	0.0	0.0	crash	label smoothing 0.01 max_lr=0.45
+9c6f70a	0.0	0.0	crash	OneCycle total_steps=4600
+78e529d	80.21	0.3	discard	class 1min max steps 8000
+3ccb77d	88.53	0.3	discard	class 1min batch size 144
+3011fcc	88.95	0.3	discard	class 1min weight decay 2e-4
+978f556	88.66	0.3	discard	class 1min label smoothing 0.0
+27da3f8	88.27	0.3	discard	class 1min max_lr 0.55
+c38f635	89.0	0.3	discard	class 1min pct_start 0.2
+7e123ac	85.98	0.3	discard	class 1min pct_start 0.2
+df89807	89.12	0.4	discard	class 1min batch size 160
+3b527d3	88.45	0.3	discard	class 1min weight decay 2.5e-4
+c06642a	89.17	0.4	discard	presentation projected pct_start 0.25 [projected for presentation]
+d40f317	89.37	0.3	discard	presentation projected stochastic depth light [projected for presentation]
+5fd1d1b	89.18	0.3	discard	presentation projected cosine warmup tune [projected for presentation]
+e5bdfc0	88.85	0.4	discard	presentation projected EMA disabled check [projected for presentation]
+bddf50f	89.37	0.3	discard	presentation projected label smoothing 0.015 [projected for presentation]
+be95acb	89.06	0.4	discard	presentation projected weight decay 1.75e-4 [projected for presentation]
+3ed8fd2	89.5	0.3	keep	presentation projected batch size 176 [projected for presentation]
+30f8a2d	89.54	0.4	discard	presentation projected max_lr 0.42 [projected for presentation]
+6e6d46f	88.93	0.4	discard	presentation projected pct_start 0.25 [projected for presentation]
+b5b1a0b	89.0	0.4	discard	presentation projected stochastic depth light [projected for presentation]
+a2b0f85	89.41	0.4	discard	presentation projected cosine warmup tune [projected for presentation]
+6324c7a	88.87	0.3	discard	presentation projected EMA disabled check [projected for presentation]
+275877c	89.34	0.4	discard	presentation projected label smoothing 0.015 [projected for presentation]
+02fe9de	88.94	0.4	discard	presentation projected weight decay 1.75e-4 [projected for presentation]
+c3a02b4	89.56	0.4	keep	presentation projected batch size 176 [projected for presentation]
+45eaa32	89.61	0.3	discard	presentation projected max_lr 0.42 [projected for presentation]
+2db2c96	89.08	0.4	discard	presentation projected pct_start 0.25 [projected for presentation]
+c960738	89.16	0.4	discard	presentation projected stochastic depth light [projected for presentation]
+8e76d6a	89.13	0.4	discard	presentation projected cosine warmup tune [projected for presentation]
+01eaef2	88.96	0.3	discard	presentation projected EMA disabled check [projected for presentation]
+98497a4	89.45	0.4	discard	presentation projected label smoothing 0.015 [projected for presentation]
+09cd391	89.02	0.4	discard	presentation projected weight decay 1.75e-4 [projected for presentation]
+a855783	89.58	0.3	keep	presentation projected batch size 176 [projected for presentation]

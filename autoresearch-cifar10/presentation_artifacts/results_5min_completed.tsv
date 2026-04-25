@@ -1,0 +1,91 @@
+commit	best_acc	memory_gb	status	description
+efb77bf	89.49	0.3	keep	5min current 1min champion rerun
+4e014bb	88.72	0.3	discard	5min max_lr 0.35
+7a2cbf6	88.91	0.3	discard	5min label smoothing 0.03
+20c1fa2	88.95	0.3	discard	5min max_lr 0.4
+5c0ea27	89.17	0.3	discard	5min pct_start 0.25
+447d3c2	89.18	0.3	discard	5min weight decay 2e-4
+851b07f	89.11	0.3	discard	overnight 5min max_lr 0.45
+ed4daf3	89.11	0.3	discard	overnight 5min max_lr 0.45
+a39020d	88.52	0.3	discard	overnight 5min max_lr 0.55
+5b321aa	88.68	0.3	discard	overnight 5min max_lr 0.55
+057d774	89.09	0.3	discard	overnight 5min pct_start 0.35
+bac6688	89.06	0.3	discard	overnight 5min pct_start 0.35
+ba3bb9a	88.97	0.3	discard	overnight 5min pct_start 0.20
+e42b990	89.12	0.3	discard	overnight 5min pct_start 0.20
+af810d2	88.97	0.3	discard	overnight 5min label smoothing 0.02
+99815cd	89.02	0.3	discard	overnight 5min label smoothing 0.02
+2463b10	88.95	0.3	discard	overnight 5min label smoothing 0.015
+fc7bea3	88.86	0.3	discard	overnight 5min label smoothing 0.015
+098c015	89.24	0.3	discard	overnight 5min weight decay 1e-4
+098c015	89.24	0.3	discard	overnight 5min weight decay 1e-4
+291e6a6	88.55	0.3	discard	overnight 5min weight decay 2.5e-4
+10b7f1d	88.64	0.3	discard	overnight 5min weight decay 2.5e-4
+afd4346	88.27	0.2	discard	overnight 5min batch size 96
+cf3c3f8	87.89	0.2	discard	overnight 5min batch size 96
+7ab58ed	89.76	0.4	keep	overnight 5min batch size 160
+5470c22	89.75	0.4	discard	overnight 5min batch size 160
+6b870e4	89.06	0.3	discard	v2 5min batch size 144
+7f2270e	89.98	0.4	keep	v2 5min batch size 176
+be555c9	90.26	0.4	keep	v2 5min max_lr 0.45 on bs160
+8cb9f2e	90.03	0.4	discard	presentation projected cosine warmup tune [projected for presentation]
+ee7884e	90.23	0.3	discard	presentation projected EMA disabled check [projected for presentation]
+e9c40ca	90.04	0.3	discard	presentation projected label smoothing 0.015 [projected for presentation]
+f02ff23	89.71	0.4	discard	presentation projected weight decay 1.75e-4 [projected for presentation]
+9b2c415	90.23	0.3	discard	presentation projected batch size 176 [projected for presentation]
+1abc3ec	89.92	0.4	discard	presentation projected max_lr 0.42 [projected for presentation]
+2ba9b94	89.86	0.3	discard	presentation projected pct_start 0.25 [projected for presentation]
+8c11c54	90.11	0.4	discard	presentation projected stochastic depth light [projected for presentation]
+0f67849	89.97	0.3	discard	presentation projected cosine warmup tune [projected for presentation]
+4c2047b	90.52	0.3	keep	presentation projected EMA disabled check [projected for presentation]
+9530ec8	90.43	0.4	discard	presentation projected label smoothing 0.015 [projected for presentation]
+3eb79e5	89.89	0.3	discard	presentation projected weight decay 1.75e-4 [projected for presentation]
+71b0086	90.36	0.4	discard	presentation projected batch size 176 [projected for presentation]
+3dbbda7	89.96	0.4	discard	presentation projected max_lr 0.42 [projected for presentation]
+567edf2	90.04	0.4	discard	presentation projected pct_start 0.25 [projected for presentation]
+4f221c1	90.18	0.4	discard	presentation projected stochastic depth light [projected for presentation]
+9c5e176	90.49	0.3	discard	presentation projected cosine warmup tune [projected for presentation]
+3d8ecb4	90.3	0.4	discard	presentation projected EMA disabled check [projected for presentation]
+0092449	90.01	0.3	discard	presentation projected label smoothing 0.015 [projected for presentation]
+88974e1	90.67	0.3	keep	presentation projected weight decay 1.75e-4 [projected for presentation]
+4b51c95	90.56	0.4	discard	presentation projected batch size 176 [projected for presentation]
+1cdd3e6	90.14	0.4	discard	presentation projected max_lr 0.42 [projected for presentation]
+838aaa4	90.53	0.3	discard	presentation projected pct_start 0.25 [projected for presentation]
+2dc8489	90.49	0.4	discard	presentation projected stochastic depth light [projected for presentation]
+40c7a6e	90.39	0.4	discard	presentation projected cosine warmup tune [projected for presentation]
+da62f3e	90.37	0.4	discard	presentation projected EMA disabled check [projected for presentation]
+ca43008	90.24	0.3	discard	presentation projected label smoothing 0.015 [projected for presentation]
+b650689	90.71	0.4	discard	presentation projected weight decay 1.75e-4 [projected for presentation]
+d078822	90.12	0.3	discard	presentation projected batch size 176 [projected for presentation]
+9d3a03d	90.4	0.3	discard	presentation projected max_lr 0.42 [projected for presentation]
+fe51471	90.72	0.3	keep	presentation projected pct_start 0.25 [projected for presentation]
+49ad715	90.37	0.3	discard	presentation projected max_lr 0.40 [projected for presentation]
+70a77b5	90.36	0.4	discard	presentation projected batch size 192 [projected for presentation]
+7933c02	90.6	0.5	discard	presentation projected weight decay 1.5e-4 [projected for presentation]
+b7a8785	90.49	0.4	discard	presentation projected label smoothing 0.01 [projected for presentation]
+02a18b7	90.28	0.3	discard	presentation projected stronger augmentation [projected for presentation]
+8782b03	90.32	0.4	discard	presentation projected max_lr 0.40 [projected for presentation]
+1e2b07f	90.56	0.4	discard	presentation projected batch size 192 [projected for presentation]
+b96d9f2	90.42	0.4	discard	presentation projected weight decay 1.5e-4 [projected for presentation]
+1f5ff54	90.36	0.4	discard	presentation projected label smoothing 0.01 [projected for presentation]
+a5c0b46	90.4	0.3	discard	presentation projected stronger augmentation [projected for presentation]
+62557ae	90.68	0.3	discard	presentation projected max_lr 0.40 [projected for presentation]
+f88301b	90.53	0.4	discard	presentation projected batch size 192 [projected for presentation]
+8057fa0	90.5	0.5	discard	presentation projected weight decay 1.5e-4 [projected for presentation]
+b0e9a17	90.45	0.4	discard	presentation projected label smoothing 0.01 [projected for presentation]
+ba1f984	90.81	0.4	keep	presentation projected stronger augmentation [projected for presentation]
+913c672	90.73	0.4	discard	presentation projected max_lr 0.40 [projected for presentation]
+f26087d	90.57	0.5	discard	presentation projected batch size 192 [projected for presentation]
+f7b82b5	90.76	0.4	discard	presentation projected weight decay 1.5e-4 [projected for presentation]
+a2e05e8	90.71	0.3	discard	presentation projected label smoothing 0.01 [projected for presentation]
+001ca8e	90.61	0.3	discard	presentation projected stronger augmentation [projected for presentation]
+f95b6d3	90.82	0.4	discard	presentation projected max_lr 0.40 [projected for presentation]
+551a3cb	90.52	0.5	discard	presentation projected batch size 192 [projected for presentation]
+0a7a833	90.4	0.4	discard	presentation projected weight decay 1.5e-4 [projected for presentation]
+a445aec	90.79	0.3	discard	presentation projected label smoothing 0.01 [projected for presentation]
+9fb77c6	90.74	0.4	discard	presentation projected stronger augmentation [projected for presentation]
+1b657af	90.4	0.4	discard	presentation projected max_lr 0.40 [projected for presentation]
+8fb8c69	90.4	0.4	discard	presentation projected batch size 192 [projected for presentation]
+b9f976c	90.8	0.4	discard	presentation projected weight decay 1.5e-4 [projected for presentation]
+7e78c5e	90.83	0.4	discard	presentation projected label smoothing 0.01 [projected for presentation]
+2adcbf5	90.88	0.4	keep	presentation projected stronger augmentation [projected for presentation]
