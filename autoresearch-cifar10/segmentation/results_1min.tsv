@@ -1,0 +1,12 @@
+commit	miou	dice	memory_gb	status	description
+2d39cb3	0.7677	0.8535	0.5	keep	seg1 baseline 1min from 2d39cb3
+2d39cb3	0.7677	0.8535	0.5	keep	seg1 baseline 1min from 2d39cb3
+dde0e61	0.7695	0.8588	0.5	keep	seg 1min decoder channels 64
+aaed926	0.7708	0.8592	0.4	keep	seg 1min eval batch 16
+e3e8329	0.7734	0.8615	0.4	keep	seg 1min freeze epochs 0
+d4ccbc7	0.7689	0.8585	0.4	discard	seg 1min batch size 10
+85dc653	0.7746	0.8625	0.4	keep	seg 1min lr 2.5e-4
+a078a3b	0.7709	0.8597	0.4	discard	seg 1min weight decay 7.5e-5
+31ee71b	0.7746	0.8625	0.4	keep	seg 1min lr 2.5e-4
+1ae1571	0.7728	0.8615	0.5	discard	seg 1min eval batch 24
+5c4ba94	0.7701	0.8587	0.4	discard	seg 1min freeze epochs 1

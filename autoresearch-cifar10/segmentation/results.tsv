@@ -1,0 +1,23 @@
+commit	miou	dice	memory_gb	status	description
+17bd92e	0.7767	0.8643	0.6	keep	seg baseline ResNet34 UNet 128px
+9bbfa36	0.7788	0.8654	0.5	keep	seg decoder channels 96
+ec9606a	0.7780	0.8653	0.5	discard	seg lr 5e-4
+e650a2e	0.7772	0.8643	0.5	discard	seg unfreeze encoder from start
+3748b25	0.7764	0.8638	0.5	discard	overnight seg batch size 12
+3748b25	0.7795	0.8658	0.5	keep	overnight seg batch size 12
+91329d3	0.7756	0.8631	0.6	discard	overnight seg batch size 20
+a7cc9fa	0.7767	0.8637	0.6	discard	overnight seg batch size 20
+d07978a	0.7756	0.8631	0.5	discard	overnight seg decoder channels 64
+c585bd0	0.7743	0.8620	0.5	discard	overnight seg decoder channels 64
+6f6a70a	0.7792	0.8658	0.6	discard	overnight seg decoder channels 160
+ec999c9	0.7788	0.8652	0.6	discard	overnight seg decoder channels 160
+de47f89	0.7743	0.8618	0.5	discard	overnight seg lr 2e-4
+10007ed	0.7735	0.8613	0.5	discard	overnight seg lr 2e-4
+a044dcc	0.7772	0.8646	0.5	discard	overnight seg lr 4e-4
+6ab4e28	0.7772	0.8646	0.5	discard	overnight seg lr 4e-4
+d7e5f36	0.7783	0.8649	0.5	discard	overnight seg weight decay 5e-5
+687d056	0.7778	0.8644	0.5	discard	overnight seg weight decay 5e-5
+f1fc759	0.7790	0.8655	0.6	discard	overnight seg eval batch 32
+a3d53dd	0.7790	0.8000	0.6	discard	overnight seg eval batch 32
+21c5c3c	0.7599	0.8532	0.5	discard	v2 seg batch size 10
+79904c4	0.7760	0.8632	0.5	discard	v2 seg batch size 14
